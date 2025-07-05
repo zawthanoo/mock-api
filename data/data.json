@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Morgan",
+      "dob": "14-07-1992",
+      "email": "alice.morgan@example.com",
+      "department": "Marketing",
+      "phone": "+1-202-555-0114"
+    },
+    {
+      "id": 2,
+      "name": "Brian Thompson",
+      "dob": "22-03-1988",
+      "email": "brian.thompson@example.com",
+      "department": "Engineering",
+      "phone": "+1-202-555-0198"
+    },
+    {
+      "id": 3,
+      "name": "Catherine Rivera",
+      "dob": "02-11-1995",
+      "email": "catherine.rivera@example.com",
+      "department": "Human Resources",
+      "phone": "+1-202-555-0142"
+    },
+    {
+      "id": 4,
+      "name": "Daniel Kim",
+      "dob": "17-05-1990",
+      "email": "daniel.kim@example.com",
+      "department": "Finance",
+      "phone": "+1-202-555-0167"
+    },
+    {
+      "id": 5,
+      "name": "Eva Patel",
+      "dob": "29-08-1993",
+      "email": "eva.patel@example.com",
+      "department": "Design",
+      "phone": "+1-202-555-0180"
+    },
+    {
+      "id": 6,
+      "name": "Frank Liu",
+      "dob": "11-12-1987",
+      "email": "frank.liu@example.com",
+      "department": "Engineering",
+      "phone": "+1-202-555-0123"
+    },
+    {
+      "id": 7,
+      "name": "Grace Bennett",
+      "dob": "05-02-1991",
+      "email": "grace.bennett@example.com",
+      "department": "Customer Support",
+      "phone": "+1-202-555-0159"
+    },
+    {
+      "id": 8,
+      "name": "Henry Adams",
+      "dob": "20-09-1989",
+      "email": "henry.adams@example.com",
+      "department": "Product",
+      "phone": "+1-202-555-0174"
+    },
+    {
+      "id": 9,
+      "name": "Isla Nguyen",
+      "dob": "30-06-1994",
+      "email": "isla.nguyen@example.com",
+      "department": "Legal",
+      "phone": "+1-202-555-0119"
+    },
+    {
+      "id": 10,
+      "name": "Jack Miller",
+      "dob": "25-10-1986",
+      "email": "jack.miller@example.com",
+      "department": "Engineering",
+      "phone": "+1-202-555-0134"
+    },
+    {
+      "id": 11,
+      "name": "Karen Wright",
+      "dob": "19-04-1993",
+      "email": "karen.wright@example.com",
+      "department": "Design",
+      "phone": "+1-202-555-0187"
+    },
+    {
+      "id": 12,
+      "name": "Leo Fernandez",
+      "dob": "13-01-1992",
+      "email": "leo.fernandez@example.com",
+      "department": "Sales",
+      "phone": "+1-202-555-0129"
+    },
+    {
+      "id": 13,
+      "name": "Mia Brooks",
+      "dob": "06-07-1996",
+      "email": "mia.brooks@example.com",
+      "department": "Marketing",
+      "phone": "+1-202-555-0147"
+    },
+    {
+      "id": 14,
+      "name": "Nathan Scott",
+      "dob": "08-10-1991",
+      "email": "nathan.scott@example.com",
+      "department": "Engineering",
+      "phone": "+1-202-555-0162"
+    },
+    {
+      "id": 15,
+      "name": "Olivia James",
+      "dob": "30-05-1989",
+      "email": "olivia.james@example.com",
+      "department": "Finance",
+      "phone": "+1-202-555-0178"
+    },
+    {
+      "id": 16,
+      "name": "Paul Anderson",
+      "dob": "15-11-1988",
+      "email": "paul.anderson@example.com",
+      "department": "Legal",
+      "phone": "+1-202-555-0138"
+    },
+    {
+      "id": 17,
+      "name": "Quinn Lee",
+      "dob": "27-03-1995",
+      "email": "quinn.lee@example.com",
+      "department": "Human Resources",
+      "phone": "+1-202-555-0112"
+    },
+    {
+      "id": 18,
+      "name": "Rachel Davis",
+      "dob": "12-09-1990",
+      "email": "rachel.davis@example.com",
+      "department": "Customer Support",
+      "phone": "+1-202-555-0150"
+    },
+    {
+      "id": 19,
+      "name": "Samuel Martinez",
+      "dob": "23-02-1987",
+      "email": "samuel.martinez@example.com",
+      "department": "Sales",
+      "phone": "+1-202-555-0182"
+    },
+    {
+      "id": 20,
+      "name": "Tina Robinson",
+      "dob": "04-12-1994",
+      "email": "tina.robinson@example.com",
+      "department": "Product",
+      "phone": "+1-202-555-0145"
+    }
+  ]  
