@@ -65,3 +65,5 @@ node_modules/
 
 # VS Code settings
 .vscode/
+
+package-lock.json
