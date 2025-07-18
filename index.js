@@ -2,18 +2,34 @@ const express = require('express')
 const validator = require('validator');
 const { parse, isValid, format } = require('date-fns');
 const { setTimeout } = require('timers/promises');
-const path = require('path');
 const multer = require('multer');
+const path = require('path');
 
+// app setup
 const app = express();
 app.use(express.json());
 
+
+// File Upload
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'uploads/');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.filename + "_" + Date.now() + path.extname(file.originalname));
+    }
+});
+const upload = multer({ storage: storage });
+
+
+// Load mock data
 const userList = require('./data/data.json');
-const port = process.env.PORT || 3132;
+
 
 app.get('/users', (req, res) => {
     res.json(userList);
 });
+
 
 app.get('/users/:id', async (req, res) => {
     await setTimeout(10000);
@@ -34,6 +50,7 @@ app.get('/depusers', (req, res) => {
     }
     res.status(200).json(depUserList);
 });
+
 
 app.patch('/users/update', (req, res) => {
     const updatedUser = req.body;
@@ -61,6 +78,7 @@ app.patch('/users/update', (req, res) => {
     }
     return res.status(400).json({ error: 'User not found. UserId : ' + id });
 });
+
 
 app.post('/user/add', (req, res) => {
     const createdUser = req.body;
@@ -93,17 +111,6 @@ app.post('/user/add', (req, res) => {
 
 });
 
-// Setup storage for uploaded fiels
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, 'uploads/');
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.filename + "_" + Date.now() + path.extname(file.originalname));
-    }
-});
-
-const upload = multer({ storage: storage });
 
 app.post('/upload', upload.single('file')), (req, res) => {
     if(!req.file) {
@@ -120,6 +127,8 @@ app.post('/upload-multiple', upload.array('fileList')), (req, res) => {
     res.send(`File uploaded ${fileNames.join(', ')}`);
 }
 
+
+const port = process.env.PORT || 3132;
 app.listen(port, () => {
     console.log('Mock server started on:', port);
 });
