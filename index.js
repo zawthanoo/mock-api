@@ -83,7 +83,7 @@ app.post('/users', (req, res) => {
         }
     }
     userList.push(createdUser);
-    return res.status(200).json({ message: 'New user is created.' });
+    return res.status(201).json({ message: 'New user is created.' });
 
 });
 
@@ -115,14 +115,14 @@ app.patch('/users/:id', (req, res) => {
     return res.status(400).json({ error: 'User not found. UserId : ' + id });
 });
 
-
-
-app.delete('/users/:id', async (req, res) => {
-    for (const user of userList) {
-        if (user.id == req.params.id) {
-            res.status(200).json(user);
-        }
+app.delete('/users/:id', (req, res) => {
+    const id = req.params.id;
+    const indexToRemove = userList.findIndex(user => user.id == id);
+    if (indexToRemove !== -1) {
+        userList.splice(indexToRemove, 1);
+        return res.status(204).send();
     }
+    return res.status(403).json({ errorCode: "E0005", message: 'User Not Found' });
 });
 
 app.post('/upload', upload.single('file')), (req, res) => {
